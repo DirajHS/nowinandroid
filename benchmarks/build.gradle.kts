@@ -26,6 +26,7 @@ android {
     defaultConfig {
         minSdk = 28
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunnerArguments["androidx.benchmark.fullTracing.enable"] = "true"
 
         buildConfigField("String", "APP_BUILD_TYPE_SUFFIX", "\"\"")
     }
@@ -74,6 +75,9 @@ dependencies {
     implementation(libs.androidx.test.rules)
     implementation(libs.androidx.test.runner)
     implementation(libs.androidx.test.uiautomator)
+    implementation(libs.androidx.tracing.perfetto)
+    implementation(libs.androidx.tracing.perfetto.binary)
+
 }
 
 androidComponents {

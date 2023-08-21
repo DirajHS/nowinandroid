@@ -14,7 +14,7 @@ androidxDataStore = "1.0.0"
 androidxEspresso = "3.5.0"
 androidxHiltNavigationCompose = "1.0.0"
 androidxLifecycle = "2.6.1"
-androidxMacroBenchmark = "1.2.0-alpha16"
+androidxMacroBenchmark = "1.2.0-beta03"
 androidxMetrics = "1.0.0-alpha03"
 androidxNavigation = "2.5.3"
 androidxProfileinstaller = "1.3.1"
@@ -51,6 +51,8 @@ retrofit = "2.9.0"
 retrofitKotlinxSerializationJson = "1.0.0"
 room = "2.5.2"
 secrets = "2.0.1"
+tracingPerfetto = "1.0.0-beta01"
+tracingPerfettoBinary = "1.0.0-beta01"
 turbine = "0.12.1"
 
 [libraries]
@@ -93,6 +95,8 @@ androidx-test-rules = { group = "androidx.test", name = "rules", version.ref = "
 androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "androidxTestRunner" }
 androidx-test-uiautomator = { group = "androidx.test.uiautomator", name = "uiautomator", version.ref = "androidxUiAutomator" }
 androidx-tracing-ktx = { group = "androidx.tracing", name = "tracing-ktx", version.ref = "androidxTracing" }
+androidx-tracing-perfetto = { module = "androidx.tracing:tracing-perfetto", version.ref = "tracingPerfetto" }
+androidx-tracing-perfetto-binary = { module = "androidx.tracing:tracing-perfetto-binary", version.ref = "tracingPerfettoBinary" }
 androidx-window-manager = { module = "androidx.window:window", version.ref = "androidxWindowManager" }
 androidx-work-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "androidxWork" }
 androidx-work-testing = { group = "androidx.work", name = "work-testing", version.ref = "androidxWork" }
