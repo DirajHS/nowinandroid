@@ -42,7 +42,7 @@ class ScrollForYouFeedBenchmark {
         packageName = PACKAGE_NAME,
         metrics = listOf(FrameTimingMetric()),
         compilationMode = compilationMode,
-        iterations = 10,
+        iterations = 1,
         startupMode = StartupMode.WARM,
         setupBlock = {
             // Start the app

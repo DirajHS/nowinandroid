@@ -120,5 +120,8 @@ dependencies {
     implementation(libs.androidx.profileinstaller)
     implementation(libs.kotlinx.coroutines.guava)
     implementation(libs.coil.kt)
-    implementation(libs.androidx.compose.runtime.tracing)
+
+    add("benchmarkImplementation", libs.androidx.tracing.perfetto)
+    add("benchmarkImplementation", libs.androidx.tracing.perfetto.binary)
+    add("benchmarkImplementation", libs.androidx.compose.runtime.tracing)
 }
