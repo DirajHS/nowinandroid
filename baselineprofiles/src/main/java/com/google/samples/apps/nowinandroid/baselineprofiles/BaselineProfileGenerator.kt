@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.nowinandroid.baselineprofile
+package com.google.samples.apps.nowinandroid.baselineprofiles
 
 import androidx.benchmark.macro.junit4.BaselineProfileRule
 import com.google.samples.apps.nowinandroid.PACKAGE_NAME
@@ -36,7 +36,7 @@ class BaselineProfileGenerator {
 
     @Test
     fun generate() =
-        baselineProfileRule.collect(PACKAGE_NAME) {
+        baselineProfileRule.collect(PACKAGE_NAME, 3) {
             // This block defines the app's critical user journey. Here we are interested in
             // optimizing for app startup. But you can also navigate and scroll
             // through your most important UI.

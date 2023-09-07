@@ -24,6 +24,7 @@ plugins {
     id("jacoco")
     id("nowinandroid.android.application.firebase")
     id("com.google.android.gms.oss-licenses-plugin")
+    id("androidx.baselineprofile")
 }
 
 android {
@@ -131,5 +132,7 @@ dependencies {
     testImplementation(kotlin("test"))
     implementation(libs.work.testing)
     kaptTest(libs.hilt.compiler)
+
+    baselineProfile(project(":baselineprofiles"))
 
 }
