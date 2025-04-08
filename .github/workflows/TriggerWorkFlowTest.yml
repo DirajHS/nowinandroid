@@ -1,0 +1,14 @@
+name: Dispatch Event Workflow
+
+on:
+  repository_dispatch:
+    types: [trigger-event]
+
+jobs:
+  build:
+    runs-on: [ ubuntu-latest ]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run a script
+        run: echo "Workflow triggered by Vela"
